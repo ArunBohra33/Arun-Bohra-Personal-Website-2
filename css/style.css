@@ -1,10 +1,14 @@
-body {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+}
+body {
     font-size: 1.25em;
     font-family: sans-serif;
     text-align: center;
     color: #40514E;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -30,9 +34,7 @@ h3 {
 
 hr {
     width: 20%;
-    border-style: dotted none none;
-    border-width: 7px;
-    border-color: #c4c4c4;
+    border-top: 7px dotted #c4c4c4;
 }
 
 p {
@@ -80,7 +82,7 @@ p {
 
 .intro {
     width:30%;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 1rem;
 }
 
 .my-skills {
